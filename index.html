@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <form class="converter-form">
+            <h2 id="main-heading">Currency Converter</h2>
+            <div class="current-amount">
+                <label for="curr-amount">Current Amount</label>
+                <input id="input" type="number" placeholder="Enter amount" required>
+            </div>
+            <div class="countries">
+                <div class="from">
+                    <label for="from">From</label>
+                    <div class="from-options">
+                         <img id="from-image" src="https://flagcdn.com/w40/us.png" alt="From Flag">
+                        <select id="select-from">
+                        </select>
+                    </div>
+                </div>
+                <div class="to">
+                    <label for="To">To</label>
+                    <div class="to-options">
+                         <img id="to-image" src="https://flagcdn.com/w40/pk.png" alt="From Flag">
+                        <select id="select-to">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="converted-amount">
+                <label for="conver-amount">Converted Amount</label>
+                <input id="output" type="number" placeholder="Result" readonly>
+            </div>
+            <button id="btn">Convert</button>
+        </form>
+    </main>
+    <footer>
+    </footer>
+    <script type="module" src="script.js"></script>
+    <!-- <script src="codes.js"></script> -->
+</body>
+</html>
